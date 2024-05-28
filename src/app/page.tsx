@@ -4,6 +4,6 @@ export default function Home() {
   return (
     
 
-    <div className='text-green-500'>hola</div>
+    <div className='mt-[20rem] mb-[20rem]'></div>
   );
 }
