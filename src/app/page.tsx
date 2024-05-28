@@ -4,6 +4,6 @@ export default function Home() {
   return (
     
 
-    <div className='mt-[20rem] mb-[20rem]'></div>
+    <div className=''></div>
   );
 }

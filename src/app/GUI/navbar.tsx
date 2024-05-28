@@ -31,8 +31,8 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="bg-white border-b border-gray-200 fixed w-full z-50 top-0">
-      <div className="container mx-auto flex justify-between items-center p-4">
+    <nav className="bg-white border-b border-gray-200 fixed w-full z-50 top-0 ">
+      <div className="container mx-auto flex justify-between items-center p-2">
         {/* Logo a la izquierda */}
         <div className="flex items-center">
           <Image src="/logo.svg" alt="Kuberalabs Logo" width={48} height={48} className="h-12 w-auto mr-3" />
