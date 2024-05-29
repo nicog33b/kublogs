@@ -1,6 +1,9 @@
 // BlogLayout.tsx
 import React from 'react';
 import CommunityInfo from '../components/Asides/left/communityInfo';
+import NavAsideLeft from '../components/Asides/left/navAsideLeft';
+import SocialIcons from '../components/Asides/left/socialIcons';
+import EntrepreneursPosts from '../components/Asides/right/entrepreneursPosts';
 
 const BlogLayout: React.FC = ({ children }) => {
   return (
@@ -8,7 +11,9 @@ const BlogLayout: React.FC = ({ children }) => {
       {/* Columna Izquierda */}
       <aside className="w-[27rem] bg-gray-50 p-4 mt-[3rem]">
         <CommunityInfo />
-      </aside>
+        <NavAsideLeft></NavAsideLeft>
+        <SocialIcons></SocialIcons>
+         </aside>
       
       {/* Columna Central */}
       <main className="w-3/4 bg-gray-50 p-4 mt-3">
@@ -17,7 +22,7 @@ const BlogLayout: React.FC = ({ children }) => {
       
       {/* Columna Derecha */}
       <aside className="w-[33rem] bg-gray-50 p-4 mt-[3rem]">
-        <p>Contenido de la columna derecha</p>
+       <EntrepreneursPosts></EntrepreneursPosts>
       </aside>
     </div>
   );

@@ -35,7 +35,9 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center p-2">
         {/* Logo a la izquierda */}
         <div className="flex items-center">
-          <Image src="/logo.svg" alt="Kuberalabs Logo" width={48} height={48} className="h-12 w-auto mr-3" />
+          <Link href='/'>
+          <Image src="/logo.svg" alt="Kuberalabs Logo" width={48} height={48} className="h-12 w-auto mr-3 hover:scale-105 cursor-pointer" />
+          </Link>
         </div>
 
         {/* Botón de menú hamburguesa y búsqueda para pantallas pequeñas */}
@@ -49,7 +51,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Menú centrado para pantallas grandes */}
-        <div className="hidden lg:flex lg:items-center lg:space-x-4">
+        <div className="hidden lg:flex lg:items-center lg:space-x-4 source-font">
           <Link href="#" className="text-gray-800 hover:text-gray-600">
             Negocios
           </Link>
