@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen bg-white">
         <Navbar />
         <div className="flex-grow mt-3 mb-3">
           <BlogLayout>
